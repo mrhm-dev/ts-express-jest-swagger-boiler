@@ -114,21 +114,21 @@ We are using following dependencies -
 
 ```json
 {
-    "@typegoose/typegoose": "^7.6.0",  	// Typegoose ORM (Work with Mongoose & Typescript)
-    "chalk": "^4.1.0",					// Colorful console log
-    "compression": "^1.7.4",			// Compress responses
-    "config": "^3.3.6",					// Manage configuration based on environment
-    "cors": "^2.8.5",					// Handle CORS errors
-    "dotenv": "^8.2.0",					// Manage environment variables
-    "express": "^4.17.1",				// Express web framework
-    "express-rate-limit": "^5.2.6",		// Handle unusal request by a bot
-    "jsdoc": "^3.6.6",					// Generate documentation from comments
-    "mongoose": "5.10.18",				// MongoDB ORM
-    "morgan": "^1.10.0",				// Request logger
-    "rotating-file-stream": "^2.1.5",	// Log rotator				
-    "swagger-ui-express": "^4.1.6",		// Render swagger UI from express application
-    "tsoa": "^3.5.2",					// Typescript Open API - decorator based
-    "winston": "^3.3.3"					// Application logger library
+    "@typegoose/typegoose": "^7.6.0",  	
+    "chalk": "^4.1.0",					
+    "compression": "^1.7.4",			
+    "config": "^3.3.6",					
+    "cors": "^2.8.5",					
+    "dotenv": "^8.2.0",					
+    "express": "^4.17.1",				
+    "express-rate-limit": "^5.2.6",		
+    "jsdoc": "^3.6.6",					
+    "mongoose": "5.10.18",				
+    "morgan": "^1.10.0",				
+    "rotating-file-stream": "^2.1.5",					
+    "swagger-ui-express": "^4.1.6",		
+    "tsoa": "^3.5.2",					
+    "winston": "^3.3.3"					
 }
 ```
 
@@ -158,23 +158,23 @@ We are using following devDependencies -
     "@types/swagger-jsdoc": "^6.0.0",
     "@types/swagger-ui-express": "^4.1.2",
     "@types/winston": "^2.4.4",
-    "@typescript-eslint/eslint-plugin": "^4.17.0",		// ESLint Plugin
-    "@typescript-eslint/parser": "^4.17.0",				// ESLint Parser
-    "eslint": "^7.21.0",								// Linter
-    "eslint-config-prettier": "^8.1.0",					// Prettier for ESLint
-    "eslint-plugin-prettier": "^3.3.1",					// ESLint Perttier Plugin
-    "jest": "^26.6.3",									// Unit & Integration Test Library
-    "jest-junit": "^12.0.0",							// Jest Reporter
-    "nodemon": "^2.0.7",								// Hot Module Replacement
-    "prettier": "^2.2.1",								// Prettify Codes
-    "sinon": "^9.2.4",									// Mocks & Stubs
-    "supertest": "^6.1.3",								// API Test
-    "ts-jest": "^26.5.3",								// Jest for Typescript
-    "ts-node": "^9.1.1",								// Typescript support for Node
-    "ts-node-dev": "^1.1.6",							// Setup development environment
-    "tslint": "^6.1.3",									// Typescript linter
-    "tslint-config-prettier": "^1.18.0",				// Tslinter with Prettier
-    "typescript": "^4.2.3"								// Typescript Compiler
+    "@typescript-eslint/eslint-plugin": "^4.17.0",		
+    "@typescript-eslint/parser": "^4.17.0",				
+    "eslint": "^7.21.0",								
+    "eslint-config-prettier": "^8.1.0",					
+    "eslint-plugin-prettier": "^3.3.1",					
+    "jest": "^26.6.3",									
+    "jest-junit": "^12.0.0",							
+    "nodemon": "^2.0.7",								
+    "prettier": "^2.2.1",								
+    "sinon": "^9.2.4",									
+    "supertest": "^6.1.3",								
+    "ts-jest": "^26.5.3",								
+    "ts-node": "^9.1.1",								
+    "ts-node-dev": "^1.1.6",							
+    "tslint": "^6.1.3",									
+    "tslint-config-prettier": "^1.18.0",				
+    "typescript": "^4.2.3"								
 }
 ```
 
@@ -209,3 +209,4 @@ We have following scripts that should keep in mind when using boilerplate code. 
 `npm run prettier` or `yarn prettier`: Prettify source codes.
 
 `npm test` or `yarn test`: Run test codes
+
