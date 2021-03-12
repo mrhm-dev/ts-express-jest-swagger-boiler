@@ -196,17 +196,17 @@ We have following scripts that should keep in mind when using boilerplate code. 
 }
 ```
 
-`npm start` or `yarn start` - it will build the project and run index.js file from build directory. This command will be used when we deploy our application to the server.
+-   `npm start` or `yarn start` - it will build the project and run index.js file from build directory. This command will be used when we deploy our application to the server.
 
-`npm run dev` or `yarn dev` : this command will run a development server and watch for file changes.
+-   `npm run dev` or `yarn dev` : this command will run a development server and watch for file changes.
 
-`npm run doc` or `yarn doc`: this command will generate `swagger.json`  and `/src/routes/routes.js` files. Every time we update our controller files in `/src/controller` we need to run this command to get the update. This command will gather tsoa decorators from controller files and generate swagger documentation and routes for us. 
+-   `npm run doc` or `yarn doc`: this command will generate `swagger.json`  and `/src/routes/routes.js` files. Every time we update our controller files in `/src/controller` we need to run this command to get the update. This command will gather tsoa decorators from controller files and generate swagger documentation and routes for us. 
 
-`npm run lint` or `yarn lint`: Check linter errors.
+-   `npm run lint` or `yarn lint`: Check linter errors.
 
-`npm run lint:fix` or `yarn lint:fix`: Fix linter errors.
+-   `npm run lint:fix` or `yarn lint:fix`: Fix linter errors.
 
-`npm run prettier` or `yarn prettier`: Prettify source codes.
+-   `npm run prettier` or `yarn prettier`: Prettify source codes.
 
-`npm test` or `yarn test`: Run test codes
+-   `npm test` or `yarn test`: Run test codes
 
