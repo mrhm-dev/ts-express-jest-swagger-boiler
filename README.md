@@ -16,87 +16,6 @@ This is a simple boilerplate repository that can fit any small express applicati
 
 
 
-## File Structure
-
-```
-📦ts-boiler
- ┣ 📂.vscode
- ┃ ┗ 📜settings.json
- ┣ 📂config
- ┃ ┣ 📜custom-environment-variables.json
- ┃ ┣ 📜default.json
- ┃ ┣ 📜development.json
- ┃ ┣ 📜production.json
- ┃ ┣ 📜stage.json
- ┃ ┗ 📜test.json
- ┣ 📂logs
- ┃ ┣ 📜access-errors.log
- ┃ ┗ 📜access.log
- ┣ 📂src
- ┃ ┣ 📂constants
- ┃ ┃ ┣ 📜index.ts
- ┃ ┃ ┗ 📜README.md
- ┃ ┣ 📂controllers
- ┃ ┃ ┣ 📜books-controller.ts
- ┃ ┃ ┗ 📜helloWorldController.ts
- ┃ ┣ 📂database
- ┃ ┃ ┗ 📜index.ts
- ┃ ┣ 📂errors
- ┃ ┃ ┣ 📜appError.ts
- ┃ ┃ ┣ 📜globalError.ts
- ┃ ┃ ┗ 📜index.ts
- ┃ ┣ 📂interfaces
- ┃ ┃ ┣ 📜index.ts
- ┃ ┃ ┗ 📜README.md
- ┃ ┣ 📂middlewares
- ┃ ┃ ┣ 📜index.ts
- ┃ ┃ ┗ 📜useMorgan.ts
- ┃ ┣ 📂models
- ┃ ┃ ┣ 📜book-model.ts
- ┃ ┃ ┣ 📜index.ts
- ┃ ┃ ┗ 📜README.md
- ┃ ┣ 📂routes
- ┃ ┃ ┗ 📜routes.ts
- ┃ ┣ 📂services
- ┃ ┣ 📂swagger
- ┃ ┃ ┣ 📜index.ts
- ┃ ┣ 📂utils
- ┃ ┃ ┗ 📜logger.ts
- ┃ ┣ 📂validators
- ┃ ┣ 📜app.ts
- ┃ ┗ 📜index.ts
- ┣ 📂test
- ┃ ┗ 📜demo.test.ts
- ┣ 📜.env
- ┣ 📜.eslintignore
- ┣ 📜.eslintrc
- ┣ 📜.gitignore
- ┣ 📜.prettierrc
- ┣ 📜default.env
- ┣ 📜dev.env
- ┣ 📜jest.config.ts
- ┣ 📜junit.xml
- ┣ 📜package.json
- ┣ 📜prod.env
- ┣ 📜README.md
- ┣ 📜swagger.json
- ┣ 📜tsconfig.json
- ┣ 📜tsoa.json
- ┣ 📜yarn-error.log
- ┗ 📜yarn.lock
-```
-
-In this boilerplate setup there are mainly 4 different section to cover. 
-
-1.  config (global configuration for the application)
-2.  src (source codes)
-3.  test (unit & integration test codes)
-4.  environment configuration files (Ex. tsconfig.json, jest.config.ts)
-
-I will go over all the sections and it's child directory and files to describe what is happening inside their.
-
-
-
 ## Package.json - Dependencies / Dev Dependencies / Scripts
 
 At first, we will look at our `package.json` file as we know this the manifest file of a nodejs application. I tried to keep the `package.json` file simple, didn't mix any other configuration. Rather than mixing everything in a single file, I create separate configuration files for every third-party tool. We have 4 different sections that should describe - 
@@ -210,3 +129,208 @@ We have following scripts that should keep in mind when using boilerplate code. 
 
 -   `npm test` or `yarn test`: Run test codes
 
+
+
+---
+
+
+
+## File Structure
+
+```
+📦ts-boiler
+ ┣ 📂.vscode
+ ┃ ┗ 📜settings.json
+ ┣ 📂config
+ ┃ ┣ 📜custom-environment-variables.json
+ ┃ ┣ 📜default.json
+ ┃ ┣ 📜development.json
+ ┃ ┣ 📜production.json
+ ┃ ┣ 📜stage.json
+ ┃ ┗ 📜test.json
+ ┣ 📂logs
+ ┃ ┣ 📜access-errors.log
+ ┃ ┗ 📜access.log
+ ┣ 📂src
+ ┃ ┣ 📂constants
+ ┃ ┃ ┣ 📜index.ts
+ ┃ ┃ ┗ 📜README.md
+ ┃ ┣ 📂controllers
+ ┃ ┃ ┣ 📜books-controller.ts
+ ┃ ┃ ┗ 📜helloWorldController.ts
+ ┃ ┣ 📂database
+ ┃ ┃ ┗ 📜index.ts
+ ┃ ┣ 📂errors
+ ┃ ┃ ┣ 📜appError.ts
+ ┃ ┃ ┣ 📜globalError.ts
+ ┃ ┃ ┗ 📜index.ts
+ ┃ ┣ 📂interfaces
+ ┃ ┃ ┣ 📜index.ts
+ ┃ ┃ ┗ 📜README.md
+ ┃ ┣ 📂middlewares
+ ┃ ┃ ┣ 📜index.ts
+ ┃ ┃ ┗ 📜useMorgan.ts
+ ┃ ┣ 📂models
+ ┃ ┃ ┣ 📜book-model.ts
+ ┃ ┃ ┣ 📜index.ts
+ ┃ ┃ ┗ 📜README.md
+ ┃ ┣ 📂routes
+ ┃ ┃ ┗ 📜routes.ts
+ ┃ ┣ 📂services
+ ┃ ┣ 📂swagger
+ ┃ ┃ ┣ 📜index.ts
+ ┃ ┣ 📂utils
+ ┃ ┃ ┗ 📜logger.ts
+ ┃ ┣ 📂validators
+ ┃ ┣ 📜app.ts
+ ┃ ┗ 📜index.ts
+ ┣ 📂test
+ ┃ ┗ 📜demo.test.ts
+ ┣ 📜.env
+ ┣ 📜.env.dev
+ ┣ 📜.env.prod
+ ┣ 📜.eslintignore
+ ┣ 📜.eslintrc
+ ┣ 📜.gitignore
+ ┣ 📜.prettierrc
+ ┣ 📜default.env
+ ┣ 📜jest.config.ts
+ ┣ 📜junit.xml
+ ┣ 📜package.json
+ ┣ 📜README.md
+ ┣ 📜swagger.json
+ ┣ 📜tsconfig.json
+ ┣ 📜tsoa.json
+ ┣ 📜yarn-error.log
+ ┗ 📜yarn.lock
+```
+
+In this boilerplate setup there are mainly 4 different section to cover. 
+
+1.  config (global configuration for the application)
+2.  src (source codes)
+3.  test (unit & integration test codes)
+4.  environment configuration files (Ex. tsconfig.json, jest.config.ts)
+
+I will go over all the sections and it's child directory and files to describe what is happening inside their.
+
+
+
+### 1. Config (Global Configuration for The Application)
+
+In the config directory we can see different configuration files. We will set different configurations and secret keys using [config](https://github.com/lorenwest/node-config) and [dotenv](https://github.com/motdotla/dotenv) npm packages. `default.json` file is our main configuration file. We can override some configuration based environment using `development.json`, `production.json` or `test.json` files. We don't need to override everything, we can update only necessary changes. `custom-environment-variables.json` file is responsible for managing environment variables.
+
+Here is a snapshot of the file structure - 
+
+```
+📦config
+ ┣ 📜custom-environment-variables.json
+ ┣ 📜default.json
+ ┣ 📜development.json
+ ┣ 📜production.json
+ ┣ 📜stage.json
+ ┗ 📜test.json
+```
+
+
+
+### 2. SRC (Source Codes)
+
+`src` is the most important directory because we will write our business logics and application code inside this directory and files. I am trying to explain it's child directory and their responsibilities. 
+
+```
+📦src
+ ┣ 📂constants
+ ┃ ┣ 📜index.ts
+ ┃ ┗ 📜README.md
+ ┣ 📂controllers
+ ┃ ┣ 📜books-controller.ts
+ ┃ ┗ 📜helloWorldController.ts
+ ┣ 📂database
+ ┃ ┗ 📜index.ts
+ ┣ 📂errors
+ ┃ ┣ 📜appError.ts
+ ┃ ┣ 📜globalError.ts
+ ┃ ┗ 📜index.ts
+ ┣ 📂interfaces
+ ┃ ┣ 📜index.ts
+ ┃ ┗ 📜README.md
+ ┣ 📂middlewares
+ ┃ ┣ 📜index.ts
+ ┃ ┗ 📜useMorgan.ts
+ ┣ 📂models
+ ┃ ┣ 📜book-model.ts
+ ┃ ┣ 📜index.ts
+ ┃ ┗ 📜README.md
+ ┣ 📂routes
+ ┃ ┗ 📜routes.ts
+ ┣ 📂services
+ ┣ 📂swagger
+ ┃ ┗ 📜index.ts
+ ┣ 📂utils
+ ┃ ┗ 📜logger.ts
+ ┣ 📂validators
+ ┣ 📜app.ts
+ ┗ 📜index.ts
+```
+
+-   `app.ts` : Main application file where we create an express application and configure middleware, routes and other stuffs.
+-   `index.ts` : This is where our application will boot. In this file I have created an HTTP server using express application from `app.ts`, connect databases and handle global errors and rejections. If you want to connect Socket.io or other server this `index.ts` file will be the perfect place for that. 
+-   `constants` : Store global constants.
+-   `controllers` : All controller definition will goes here. Use [tsoa](https://github.com/lukeautry/tsoa) to create controllers. 
+-   `database` : Database configuration and connect function.
+-   `errors` : All error related files like custom errors, error handlers and other configurations.
+-   `interfaces` : All interfaces will live here.
+-   `middlewares` : Custom middleware will live here.
+-   `models` : All database schema and models definition will goes here.
+-   `routes` : Don't need to touch, it will generate `RegisterRoute` function when run `yarn doc` command.
+-   `services` : All business logic will stay here.
+-   `swagger` : Swagger related configurations will stay here.
+-   `utils` : We can define various utility functions here that we can reuse.
+-   `validators` : All validation logic will be written here.
+
+
+
+### 3. Test (Unit & Integration Test Codes)
+
+In this directory we will write our test codes. Basically it will replicate our source directory and file structures. Then we will write unit and integration testing for all of our source codes that need to be tested. 
+
+
+
+### 4. Environment Configuration Files
+
+```
+📦ts-boiler
+ ┣ .......
+ ┣ .......
+ ┣ 📜.env
+ ┣ 📜.env.dev
+ ┣ 📜.env.prod
+ ┣ 📜.eslintignore
+ ┣ 📜.eslintrc
+ ┣ 📜.gitignore
+ ┣ 📜.prettierrc
+ ┣ 📜default.env
+ ┣ 📜jest.config.ts
+ ┣ 📜junit.xml
+ ┣ 📜package.json
+ ┣ 📜README.md
+ ┣ 📜swagger.json
+ ┣ 📜tsconfig.json
+ ┣ 📜tsoa.json
+ ┣ 📜yarn-error.log
+ ┗ 📜yarn.lock
+```
+
+We have a lot of different configuration files. I have configured most of the third-party libraries in a standard manner. You may also need to tweak some of the configurations. That's why you need to understand what are these configuration file doing. 
+
+-   `.env` : Define all of your environment variables.
+-   `.eslintignore` : Define those files that you don't want to lint. 
+-   `.eslintrc` : ESLint configuration file.
+-   `.gitignore` : Ignore some file that you don't want to track.
+-   `.prettierrc` : Prettier configuration file.
+-   `default.env` : Sample of environment variables
+-   `jest.config.ts` : Jest configuration file.
+-   `swagger.json` : Auto generated swagger file.
+-   `tsconfig.json` : Typescript configuration file.
+-   `tsoa.json` : TSOA configuration file
