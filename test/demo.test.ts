@@ -1,5 +1,5 @@
 import request from 'supertest';
-import app from '../app';
+import app from '../src/app';
 
 test('Sample Test', () => {
     expect(1).toEqual(1);
