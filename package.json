@@ -28,7 +28,6 @@
         "mongoose": "5.10.18",
         "morgan": "^1.10.0",
         "rotating-file-stream": "^2.1.5",
-        "swagger-jsdoc": "6",
         "swagger-ui-express": "^4.1.6",
         "tsoa": "^3.5.2",
         "winston": "^3.3.3"
