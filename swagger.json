@@ -1,0 +1,114 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {
+			"HelloWorldInterface": {
+				"properties": {
+					"message": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"message"
+				],
+				"type": "object",
+				"additionalProperties": true
+			},
+			"Book": {
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"author": {
+						"type": "string"
+					},
+					"price": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"type": "object",
+				"additionalProperties": true
+			}
+		},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "ts-boiler",
+		"version": "1.0.0",
+		"license": {
+			"name": "ISC"
+		},
+		"contact": {}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/hello-world": {
+			"get": {
+				"operationId": "Hello",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/HelloWorldInterface"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"HelloWorldController"
+				],
+				"security": [],
+				"parameters": []
+			}
+		},
+		"/books": {
+			"get": {
+				"operationId": "Find",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"items": {
+										"$ref": "#/components/schemas/Book"
+									},
+									"type": "array"
+								},
+								"examples": {
+									"Example 1": {
+										"value": [
+											{
+												"name": "tsoa user",
+												"author": "HM Nayem",
+												"price": 100
+											}
+										]
+									}
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"BookController"
+				],
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/api/v1"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es2020", // as per https://node.green/ v14 fully supports es2020
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "build",
+        "pretty": true,
+        "noEmitOnError": true,
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "removeComments": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "newLine": "lf",
+        "noUnusedLocals": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "skipLibCheck": true,
+        "lib": ["esnext"],
+        "typeRoots": ["./node_modules/@types", "./typings"]
+    },
+    "include": ["./src/**/*.ts"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
