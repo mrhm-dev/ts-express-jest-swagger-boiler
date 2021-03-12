@@ -1,6 +1,4 @@
 {
-    "cSpell.ignoreWords": [
-        "tsoa",
-        "typegoose"
-    ]
+    "cSpell.ignoreWords": ["tsoa", "typegoose"],
+    "editor.formatOnSave": true
 }
